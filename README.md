@@ -14,9 +14,23 @@ Twilio Videoのハンズオン（2020年版）
 |TURN|ENABLED|必要に応じてTURNを利用する|
 |MAXIMUM PERTICIPANTS|2|最大参加者数を2に制限|
 
-<img width="800" alt="スクリーンショット 2018-07-21 00.48.43.png" src="https://qiita-image-store.s3.amazonaws.com/0/86046/6264b568-306c-0439-727e-7c85911befdd.png">
+![RoomSetting](https://qiita-image-store.s3.amazonaws.com/0/86046/6264b568-306c-0439-727e-7c85911befdd.png)
 
 - **Save**ボタンを押します。
+
+- 管理コンソールのスライドメニューから、**Programmable Video**を選択します。
+- Programmable Videoメニューの**ツール** > **API Keys**を選択します。
+- **新しいAPIキーを作成する**ボタンを押すか、赤いプラスアイコンを押して、新しいAPI Keyを作成します。
+- 名前欄に「Video」と入力し、キータイプは「Standard」を選択します。
+
+![VideoAPIKey1.png](https://qiita-image-store.s3.amazonaws.com/0/86046/273c29d9-89d2-d9e5-205b-bd34c42d7eee.png)
+
+- **APIキーを作成する**ボタンを押します。
+- 表示される**SID**（SKから始まる文字列）と、**SECRET**に表示されている文字列の両方をメモ帳に保存します。
+- **完了しました**のチェックボックスにチェックを入れて、**終了**ボタンを押します。
+
+![VideoAPIKey2.png](https://qiita-image-store.s3.amazonaws.com/0/86046/65185bbc-1ab1-735a-a2ad-7ff1c83d0926.png)
+
 
 ## インストール
 
@@ -37,8 +51,8 @@ $ twilio serverless:init --template blank [プロジェクト名]
 変数名|説明
 :--|:--
 MAIN_ACCOUNT_SID|TwilioのアカウントSID（ACから始まる文字列）
-TWILIO_VIDEO_KEY|APIキー（SKから始まる文字列）
-TWILIO_VIDEO_SECRET|APIシークレット
+TWILIO_VIDEO_KEY|先程取得したAPIキー（SKから始まる文字列）
+TWILIO_VIDEO_SECRET|先程取得したAPIシークレット
 
 デプロイ
 
